@@ -1,0 +1,1280 @@
+.gaia6g-theme {
+  --gaia6g-primary: #e6ecea;
+  --gaia6g-deep: #132a25;
+  --gaia6g-accent: #19d88e;
+  --gaia6g-white: #ffffff;
+
+  --color-text: var(--gaia6g-deep);
+  --color-bg: var(--gaia6g-white);
+
+  --header-bg: var(--gaia6g-primary);
+  --header-text: var(--gaia6g-deep);
+  --header-submenu-bg: var(--gaia6g-primary);
+  --header-mobile-menu-bg: var(--gaia6g-primary);
+  --header-mobile-overlay-bg: var(--gaia6g-primary);
+  --header-border-color: rgba(19, 42, 37, 0.22);
+  --header-toggle-border-color: rgba(25, 216, 142, 0.45);
+  --header-more-icon-gap: 0.28rem;
+  --header-more-submenu-padding: 0.24rem;
+  --header-more-submenu-link-padding: 0.34rem 0.48rem;
+  --header-more-submenu-link-size: 0.78rem;
+
+  --footer-bg: var(--gaia6g-primary);
+  --footer-text: var(--gaia6g-deep);
+  --footer-top-link-color: var(--gaia6g-accent);
+  --footer-top-link-border-color: var(--gaia6g-accent);
+
+  background: var(--gaia6g-white);
+}
+
+.gaia6g-theme .topbar-submenu {
+  border-color: rgba(19, 42, 37, 0.28);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+
+.gaia6g-theme .main-footer .footer-top-link {
+  color: var(--gaia6g-accent);
+  border-color: var(--gaia6g-accent);
+  background: transparent;
+}
+
+.gaia6g-theme .main-footer .footer-top-link:hover {
+  color: var(--gaia6g-accent);
+  border-color: var(--gaia6g-accent);
+  background: transparent;
+  transform: scale(1.08);
+}
+
+.gaia6g-home {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gaia6g-home a:not(.btn) {
+  color: inherit;
+}
+
+.gaia6g-module {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  padding: 5rem 0;
+  box-sizing: border-box;
+}
+
+.gaia6g-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.gaia6g-module--deep {
+  background: var(--gaia6g-deep);
+  color: var(--gaia6g-white);
+}
+
+.gaia6g-module--accent {
+  background: var(--gaia6g-accent);
+  color: var(--gaia6g-white);
+}
+
+.gaia6g-module--primary {
+  background: var(--gaia6g-primary);
+  color: var(--gaia6g-deep);
+}
+
+.gaia6g-module--light {
+  background: var(--gaia6g-white);
+  color: var(--gaia6g-deep);
+}
+
+.gaia6g-module-title {
+  margin: 0 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.gaia6g-module-title img {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
+}
+
+.gaia6g-module p {
+  margin: 0 0 0.95rem;
+  line-height: 1.62;
+}
+
+.gaia6g-module p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================
+   Hero
+   ========================= */
+
+.gaia6g-theme .gaia6g-hero {
+  --hero-height: 525px;
+  --hero-min-height: 525px;
+  --hero-max-height: none;
+  --hero-bg-color: var(--gaia6g-deep);
+  --hero-inner-max-width: 1100px;
+  --hero-padding: 0 1.5rem;
+  --hero-content-justify: center;
+  --hero-media-copy-gap: 2rem;
+  --hero-copy-max-width: none;
+  --hero-claim-color: #fff;
+  --hero-claim-size: 1.35rem;
+  --hero-claim-weight: 600;
+  --hero-claim-line-height: 1.45;
+  --hero-button-color: #fff;
+  --hero-button-bg: var(--gaia6g-accent);
+  --hero-button-border-color: var(--gaia6g-accent);
+  --hero-button-margin-top: 2rem;
+  --hero-button-hover-bg: transparent;
+  --hero-button-hover-color: #fff;
+  --hero-button-hover-border-color: #fff;
+
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background: var(--gaia6g-deep);
+  min-height: 525px;
+  display: flex;
+  align-items: center;
+}
+
+.gaia6g-theme .gaia6g-hero .page-hero__inner {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  background: transparent;
+}
+
+.gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__inner {
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__media {
+  flex: 0 0 auto;
+  width: min(366px, 42vw);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__copy {
+  flex: 0 0 auto;
+  text-align: left;
+  transform: translateX(15px);
+}
+
+.gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__claim {
+  max-width: 540px;
+}
+
+.gaia6g-theme .gaia6g-hero .page-hero__button {
+  color: var(--gaia6g-white);
+  background: var(--gaia6g-accent);
+  border-color: var(--gaia6g-accent);
+  box-shadow: none;
+}
+
+.gaia6g-theme .gaia6g-hero .page-hero__button:hover,
+.gaia6g-theme .gaia6g-hero .page-hero__button:focus-visible {
+  color: var(--gaia6g-white);
+  background: transparent;
+  border-color: var(--gaia6g-white);
+  box-shadow: none;
+}
+
+/* =========================
+   Intro
+   ========================= */
+
+.gaia6g-intro {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  min-height: 132px;
+  height: 132px;
+  padding: 0;
+  color: var(--gaia6g-deep);
+  background: var(--gaia6g-white);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.gaia6g-intro-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  transform: translateY(4px);
+}
+
+.gaia6g-intro-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 auto;
+}
+
+.gaia6g-intro-title {
+  margin: 0;
+  color: var(--gaia6g-deep);
+  font-size: 1.72rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* =========================
+   Financiacion
+   ========================= */
+
+#financiacion-mod {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.gaia6g-pills {
+  display: block;
+  margin: 0.6rem 0 1.25rem;
+}
+
+.gaia6g-funding-row {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 0.85rem;
+  margin-bottom: 0.75rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.gaia6g-funding-row--quad {
+  grid-template-columns: 16% 34% 16% 34%;
+}
+
+.gaia6g-funding-row:last-child {
+  margin-bottom: 0;
+}
+
+.gaia6g-pill {
+  min-height: 54px;
+  padding: 0.68rem 1.1rem;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.gaia6g-pill-label {
+  color: var(--gaia6g-accent);
+  background: var(--gaia6g-white);
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.gaia6g-pill-value {
+  color: var(--gaia6g-white);
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* =========================
+   Presupuesto economico
+   ========================= */
+
+#lotes-mod,
+#about-mod,
+#objetivos-mod,
+#tecnologia-mod,
+#actuaciones-mod,
+#cronograma-mod,
+#arquitectura-mod,
+#casos-mod,
+#infraestructura-mod,
+#ecosistema-mod,
+#impacto-mod,
+#publicaciones-mod {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.gaia6g-lotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.95rem;
+}
+
+.gaia6g-lote {
+  border: 2px solid var(--gaia6g-deep);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+}
+
+.gaia6g-lote h3 {
+  margin: 0 0 0.4rem;
+  color: var(--gaia6g-deep);
+  font-size: 1.02rem;
+}
+
+.gaia6g-lote p {
+  margin: 0;
+  color: var(--gaia6g-deep);
+  font-size: 0.95rem;
+}
+
+.gaia6g-lote-total {
+  margin-top: 1rem;
+  padding-top: 0.9rem;
+  color: var(--gaia6g-deep);
+  font-weight: 700;
+}
+
+/* =========================
+   Logos oficiales
+   ========================= */
+
+.gaia6g-logos-module {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background: var(--gaia6g-white);
+  padding: 1.2rem 0 1.6rem;
+  box-sizing: border-box;
+}
+
+.gaia6g-logos-module .gaia6g-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gaia6g-logos-module--after-footer {
+  margin-top: 0;
+}
+
+.gaia6g-funding-logos {
+  width: 100%;
+  max-width: 760px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* =========================
+   About
+   ========================= */
+
+.gaia6g-about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.gaia6g-about-col {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.gaia6g-about-col p {
+  margin: 0;
+}
+
+#about-mod .gaia6g-module-title,
+#about-mod p {
+  color: var(--gaia6g-white);
+}
+
+/* =========================
+   Objetivos
+   ========================= */
+
+.gaia6g-grid {
+  display: block;
+}
+
+#objetivos-mod .gaia6g-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.gaia6g-card {
+  margin: 0 0 0.85rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+#objetivos-mod .gaia6g-card {
+  margin: 0;
+  padding: 1rem 1.05rem;
+  border: 2px solid rgba(19, 42, 37, 0.55);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.62);
+  box-sizing: border-box;
+}
+
+#objetivos-mod .gaia6g-card h3,
+#objetivos-mod .gaia6g-card p,
+#objetivos-mod .gaia6g-module-title {
+  color: var(--gaia6g-deep);
+}
+
+#objetivos-mod .gaia6g-card h3 {
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+#objetivos-mod .gaia6g-card p {
+  margin-top: 0.85rem;
+}
+
+.gaia6g-accordion {
+  margin: 0;
+}
+
+.gaia6g-accordion summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+
+.gaia6g-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.gaia6g-accordion-toggle {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border: 1.5px solid currentColor;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 700;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.gaia6g-accordion[open] .gaia6g-accordion-toggle {
+  transform: rotate(45deg);
+}
+
+#objetivos-mod .gaia6g-accordion-toggle {
+  color: var(--gaia6g-deep);
+  border-color: var(--gaia6g-deep);
+}
+
+#objetivos-mod .gaia6g-accordion[open] .gaia6g-accordion-toggle {
+  color: var(--gaia6g-white);
+}
+
+/* =========================
+   Tecnologia
+   ========================= */
+
+#tecnologia-mod,
+#infraestructura-mod {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+#tecnologia-mod::before,
+#infraestructura-mod::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--gaia6g-pattern-image);
+  background-repeat: repeat;
+  background-size: 190px 190px;
+  background-position: 0 0;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#tecnologia-mod .gaia6g-inner,
+#infraestructura-mod .gaia6g-inner {
+  position: relative;
+  z-index: 1;
+}
+
+#tecnologia-mod .gaia6g-module-title {
+  color: var(--gaia6g-deep);
+}
+
+.gaia-tech-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.gaia-tech-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  gap: 0.95rem;
+  border: 2px solid rgba(19, 42, 37, 0.24);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 0.78rem 0.9rem;
+}
+
+.gaia-tech-label {
+  justify-self: start;
+  display: inline-flex;
+  padding: 0.32rem 0.62rem;
+  border: 2px solid var(--gaia6g-accent);
+  border-radius: 999px;
+  color: var(--gaia6g-deep);
+  background: transparent;
+  font-size: 0.83rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.gaia-tech-row p {
+  margin: 0;
+  color: var(--gaia6g-deep);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Actuaciones
+   ========================= */
+
+#actuaciones-mod .gaia6g-module-title {
+  color: var(--gaia6g-deep);
+}
+
+#actuaciones-mod .gaia6g-module-title img {
+  filter: brightness(0) saturate(100%) invert(13%) sepia(18%) saturate(907%) hue-rotate(117deg) brightness(95%) contrast(92%);
+}
+
+.gaia-timeline {
+  position: relative;
+  display: grid;
+  gap: 0.9rem;
+  padding-left: 1.2rem;
+}
+
+.gaia-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.24rem;
+  top: 0.15rem;
+  bottom: 0.15rem;
+  width: 2px;
+  background: var(--gaia6g-deep);
+}
+
+.gaia-milestone {
+  position: relative;
+  padding: 0.88rem 0.95rem;
+  border: 2px solid var(--gaia6g-deep);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-milestone::before {
+  content: "";
+  position: absolute;
+  left: -1.2rem;
+  top: 0.92rem;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--gaia6g-deep);
+  border-radius: 999px;
+  background: var(--gaia6g-deep);
+}
+
+.gaia-milestone h3,
+.gaia-milestone p {
+  color: var(--gaia6g-deep);
+}
+
+.gaia-milestone h3 {
+  margin: 0 0 0.32rem;
+  font-size: 0.98rem;
+  line-height: 1.32;
+}
+
+.gaia-milestone p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Cronograma
+   ========================= */
+
+#cronograma-mod .gaia6g-module-title,
+#cronograma-mod .gaia-phase-kicker,
+#cronograma-mod .gaia-phase h3,
+#cronograma-mod .gaia-phase p {
+  color: var(--gaia6g-white);
+}
+
+.gaia-roadmap {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.82rem;
+}
+
+.gaia-phase {
+  position: relative;
+  padding: 0.9rem 0.9rem 0.95rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-phase:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  right: -0.58rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 999px;
+  background: var(--gaia6g-accent);
+  color: var(--gaia6g-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+  font-weight: 800;
+  box-shadow: 0 0 0 4px var(--gaia6g-deep);
+  z-index: 2;
+}
+
+.gaia-phase-kicker {
+  margin: 0 0 0.42rem;
+  color: var(--gaia6g-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.gaia-phase h3 {
+  margin: 0 0 0.34rem;
+  font-size: 0.96rem;
+  line-height: 1.32;
+}
+
+.gaia-phase p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Arquitectura
+   ========================= */
+
+#arquitectura-mod {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+#arquitectura-mod::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 20%, rgba(25, 216, 142, 0.18) 0%, transparent 36%),
+    radial-gradient(circle at 90% 86%, rgba(25, 216, 142, 0.14) 0%, transparent 34%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+#arquitectura-mod .gaia6g-inner {
+  position: relative;
+  z-index: 1;
+}
+
+#arquitectura-mod .gaia6g-module-title,
+#arquitectura-mod .gaia-layer h3,
+#arquitectura-mod .gaia-layer p,
+#arquitectura-mod .gaia-control h3,
+#arquitectura-mod .gaia-control p {
+  color: var(--gaia6g-white);
+}
+
+.gaia-arch {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 0.92rem;
+  align-items: stretch;
+}
+
+.gaia-arch-stack {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.gaia-layer {
+  position: relative;
+  padding: 0.88rem 0.92rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-layer:not(:last-child)::after {
+  content: "↓";
+  position: absolute;
+  left: 50%;
+  bottom: -0.78rem;
+  transform: translateX(-50%);
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 999px;
+  background: var(--gaia6g-accent);
+  color: var(--gaia6g-deep);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  box-shadow: 0 0 0 4px var(--gaia6g-deep);
+  z-index: 2;
+}
+
+.gaia-layer h3 {
+  margin: 0 0 0.32rem;
+  font-size: 0.98rem;
+}
+
+.gaia-layer p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.gaia-control {
+  min-height: 100%;
+  height: 100%;
+  align-self: stretch;
+  box-sizing: border-box;
+  padding: 1.35rem 1.1rem;
+  border: 2px dashed rgba(25, 216, 142, 0.92);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--gaia6g-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gaia-control h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+}
+
+.gaia-control p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Casos de uso
+   ========================= */
+
+#casos-mod .gaia6g-module-title,
+.gaia-case h3,
+.gaia-case p {
+  color: var(--gaia6g-deep);
+}
+
+.gaia-cases {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.86rem;
+}
+
+.gaia-case {
+  padding: 0.9rem 0.95rem;
+  border: 2px solid rgba(19, 42, 37, 0.54);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-case--w {
+  grid-column: span 3;
+}
+
+.gaia-case--n {
+  grid-column: span 2;
+}
+
+.gaia-case h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.96rem;
+}
+
+.gaia-case p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Infraestructura
+   ========================= */
+
+#infraestructura-mod,
+#infraestructura-mod .gaia6g-module-title,
+#infraestructura-mod p,
+#infraestructura-mod h3,
+#infraestructura-mod figcaption {
+  color: var(--gaia6g-deep);
+}
+
+.gaia-infra-stack {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.gaia-cap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.62rem;
+  margin-bottom: 1.35rem;
+}
+
+.gaia-cap-item {
+  border-top: 2px solid var(--gaia6g-deep);
+  padding-top: 0.55rem;
+}
+
+.gaia-cap-item h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.045rem;
+  line-height: 1.25;
+}
+
+.gaia-cap-item p {
+  margin: 0;
+  font-size: 0.985rem;
+  line-height: 1.45;
+}
+
+.gaia-infra-media-split {
+  display: grid;
+  grid-template-columns: 1.22fr 0.78fr;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+
+.gaia-infra-hero,
+.gaia-infra-support figure,
+.gaia-campus-map figure {
+  margin: 0;
+  display: grid;
+}
+
+.gaia-infra-hero {
+  gap: 0.75rem;
+}
+
+.gaia-infra-hero img {
+  width: 100%;
+  max-width: 100%;
+  min-height: 270px;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.gaia-infra-hero figcaption,
+.gaia-campus-map figcaption {
+  font-size: 0.84rem;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.gaia-infra-support {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0.5rem;
+  height: 100%;
+  width: 84%;
+  justify-self: center;
+}
+
+.gaia-infra-support figure {
+  gap: 0.55rem;
+}
+
+.gaia-infra-support img {
+  width: 86%;
+  max-width: 86%;
+  min-height: 90px;
+  object-fit: cover;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  margin: 0 auto;
+}
+
+.gaia-infra-support figcaption {
+  font-size: 0.72rem;
+  line-height: 1.22;
+  font-weight: 700;
+}
+
+.gaia-campus-map {
+  margin-top: 2.15rem;
+  border-top: 2px solid var(--gaia6g-deep);
+  padding-top: 1.85rem;
+}
+
+.gaia-campus-map h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.02rem;
+  line-height: 1.3;
+}
+
+.gaia-campus-map p {
+  margin: 0 0 0.75rem;
+  max-width: 78ch;
+  line-height: 1.58;
+}
+
+.gaia-campus-map figure {
+  gap: 0.42rem;
+}
+
+.gaia-campus-map img {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  border: 0;
+  border-radius: 0;
+  background: #f8fbfa;
+}
+
+.gaia-lab-link,
+#infraestructura-mod a[href*="gaialab"] {
+  color: var(--gaia6g-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 400;
+  display: inline-block;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  transform-origin: center;
+}
+
+.gaia-lab-link:hover,
+#infraestructura-mod a[href*="gaialab"]:hover {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+/* =========================
+   Ecosistema
+   ========================= */
+
+#ecosistema-mod,
+#ecosistema-mod .gaia6g-module-title,
+#ecosistema-mod .gaia-ecosystem-tags span {
+  color: var(--gaia6g-white);
+}
+
+
+#ecosistema-mod .gaia-ecosystem-panel h3,
+#ecosistema-mod .gaia-ecosystem-panel p {
+  color: #000;
+}
+
+#ecosistema-mod .gaia6g-module-title img {
+  filter: brightness(0) invert(1);
+}
+
+.gaia-ecosystem {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 0.95rem;
+}
+
+.gaia-ecosystem-panel {
+  padding: 0.92rem 0.96rem;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-ecosystem-panel h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.96rem;
+}
+
+.gaia-ecosystem-panel p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.gaia-ecosystem-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.46rem;
+  margin-top: 0.72rem;
+}
+
+.gaia-ecosystem-tags span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.62rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.88);
+  border-radius: 999px;
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+#ecosistema-mod .gaia-ecosystem-panel a,
+#ecosistema-mod .gaia6g-eco-link {
+  color: var(--gaia6g-white);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 800;
+  display: inline-block;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+  transform-origin: center;
+}
+
+#ecosistema-mod .gaia-ecosystem-panel a:hover,
+#ecosistema-mod .gaia6g-eco-link:hover {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+/* =========================
+   Impacto
+   ========================= */
+
+#impacto-mod,
+#impacto-mod .gaia6g-module-title,
+#impacto-mod .gaia-impact-lead,
+#impacto-mod .gaia-impact h3,
+#impacto-mod .gaia-impact p {
+  color: var(--gaia6g-white);
+}
+
+.gaia-impact-lead {
+  margin: 0 0 0.95rem;
+  max-width: 70ch;
+  line-height: 1.55;
+}
+
+.gaia-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.gaia-impact {
+  padding: 0.86rem 0.92rem;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  border-radius: 14px;
+  background: transparent;
+}
+
+.gaia-impact h3 {
+  margin: 0 0 0.3rem;
+  font-size: 0.83rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.gaia-impact p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* =========================
+   Publicaciones
+   ========================= */
+
+#publicaciones-mod,
+#publicaciones-mod .gaia6g-module-title,
+#publicaciones-mod .gaia6g-pubs-group h3,
+#publicaciones-mod .gaia6g-pubs,
+#publicaciones-mod .gaia6g-pubs li {
+  color: var(--gaia6g-deep);
+}
+
+.gaia6g-pubs-group {
+  margin-top: 1rem;
+}
+
+.gaia6g-pubs-group h3 {
+  margin: 0 0 0.55rem;
+  font-size: 1.03rem;
+  font-weight: 700;
+}
+
+.gaia6g-pubs {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.65rem;
+  line-height: 1.5;
+}
+
+#publicaciones-mod .gaia6g-pubs a {
+  color: var(--gaia6g-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  font-weight: 700;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 980px) {
+  .gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__inner {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+
+  .gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__media {
+    width: min(366px, 90vw);
+    justify-content: center;
+  }
+
+  .gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__copy {
+    max-width: 100%;
+    text-align: center;
+    transform: none;
+  }
+
+  .gaia6g-theme .gaia6g-hero.page-hero--media-copy .page-hero__claim {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.08rem;
+  }
+
+  .gaia6g-theme .gaia6g-hero .page-hero__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gaia6g-intro {
+    min-height: 114px;
+    height: 114px;
+  }
+
+  .gaia6g-intro-head {
+    transform: translateY(3px);
+  }
+
+  .gaia6g-inner {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .gaia6g-funding-row,
+  .gaia6g-funding-row--quad,
+  #objetivos-mod .gaia6g-grid,
+  .gaia6g-about-grid,
+  .gaia6g-lotes-grid,
+  .gaia-roadmap,
+  .gaia-arch,
+  .gaia-cases,
+  .gaia-cap-grid,
+  .gaia-infra-media-split,
+  .gaia-ecosystem,
+  .gaia-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gaia-tech-row {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .gaia-infra-support {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .gaia-case--w,
+  .gaia-case--n {
+    grid-column: auto;
+  }
+
+  .gaia-phase:not(:last-child)::after {
+    display: none;
+  }
+
+  #lotes-mod,
+  #about-mod,
+  #objetivos-mod,
+  #tecnologia-mod,
+  #actuaciones-mod,
+  #cronograma-mod,
+  #arquitectura-mod,
+  #casos-mod,
+  #infraestructura-mod,
+  #ecosistema-mod,
+  #impacto-mod,
+  #publicaciones-mod {
+    padding-top: 3.6rem;
+    padding-bottom: 3.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .gaia6g-theme .main-footer .footer-items {
+    grid-template-columns: 1fr;
+  }
+}
